@@ -3,33 +3,33 @@ links.forEach((item) => {
     item.addEventListener("click", () => {
         let el = document.getElementById(item.getAttribute("data-link"));
         el.scrollIntoView({ behavior: "smooth", block: "start" });
-    })
-})
+    });
+});
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav__items-list");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-})
+});
 
-document.querySelectorAll(".nav__items").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}))
+document.querySelectorAll(".nav__items").forEach((n) =>
+    n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    })
+);
 
-
-var typed = new Typed('.dynamic-text', {
+var typed = new Typed(".dynamic-text", {
     // Waits 1000ms after typing "First"
-    strings: ['Developer.', 'Coder.', 'Programmer.', 'Rider.', 'PhotoGrapher.'],
+    strings: ["Developer.", "Coder.", "Programmer.", "Rider.", "PhotoGrapher."],
     loop: true,
     smartBackspace: false,
     typeSpeed: 100,
     backSpeed: 80,
-    cursorChar: '|',
-    backDelay: 1500
+    cursorChar: "|",
+    backDelay: 1500,
 });
-
 
 window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".navbar");
@@ -40,4 +40,36 @@ AOS.init();
 
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
+};
+
+// disable developer mode
+document.onkeydown = function (e) {
+    if (e.keyCode == 123) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+        return false;
+    }
+};
+
+
+const email = ()=>{
+    Email.send({
+        SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+        To : 'islamafif1123@gmail.com',
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
 }
