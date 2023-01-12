@@ -57,7 +57,7 @@ body {
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 
@@ -220,12 +220,12 @@ body {
 }
 
 .subheading {
-    animation: moveRightToLeft 0.8s;
+    animation: moveRightToLeft 0.9s;
 }
 
 .home-text h1 {
     font-size: 80px;
-    animation: moveToCenter 0.8s ease-in-out;
+    animation: moveToCenter 0.9s ease-in-out;
 
 }
 

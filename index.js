@@ -1,8 +1,8 @@
 const links = document.querySelectorAll(".nav__items");
-links.forEach((item)=>{
-    item.addEventListener("click",()=>{
+links.forEach((item) => {
+    item.addEventListener("click", () => {
         let el = document.getElementById(item.getAttribute("data-link"));
-        el.scrollIntoView({behavior:"smooth",block:"start"});
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
     })
 })
 const hamburger = document.querySelector(".hamburger");
@@ -26,7 +26,7 @@ var typed = new Typed('.dynamic-text', {
     smartBackspace: false,
     typeSpeed: 100,
     backSpeed: 80,
-    cursorChar:'|',
+    cursorChar: '|',
     backDelay: 1500
 });
 
@@ -38,5 +38,6 @@ window.addEventListener("scroll", () => {
 
 AOS.init();
 
-
-
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
