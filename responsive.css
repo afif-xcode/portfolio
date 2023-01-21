@@ -1,0 +1,147 @@
+@media (max-width: 500px) {
+  body {
+    width: 430px;
+  }
+  .navbar {
+    position: fixed;
+  }
+
+  .nav__logo {
+    padding: 0;
+    transform: translateX(-100%);
+  }
+
+  .nav__logo .nav__logo-head::after {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    content: "";
+    background: #3e64ff;
+    transform: translate(0%, -45%);
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav__items-list {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #3e65ff;
+    opacity: 0.7;
+    width: 90% !important;
+    text-align: center;
+    transition: 0.8s ease-in-out;
+  }
+
+  .nav__items-list li {
+    margin: 16px 0;
+  }
+
+  .nav__items-list li a {
+    color: white !important;
+  }
+
+  .nav__items-list.active {
+    left: 0;
+  }
+
+  .home-text {
+    text-align: center !important;
+    /* text-transform: uppercase; */
+    letter-spacing: 4px;
+    font-weight: 500;
+    align-items: center;
+    display: block;
+    top: 0;
+    /* transform: translate(0%, 120%); */
+  }
+
+  .home-text span {
+    font-size: 20px !important;
+  }
+
+  .home-text h1 {
+    font-size: 50px !important;
+  }
+
+  .about-img img {
+    width: 80%;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 10px 10px #555;
+  }
+
+  .about-content{
+    display: flex;
+    float: row;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .about-content h1 {
+    font-size: 40px !important;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: 500;
+  }
+
+  .about-content span {
+    font-size: 15px !important;
+    font-weight: 200;
+    opacity: 0.8;
+    text-align: center;
+    padding: 5rem 30px 60px 50px;
+  }
+
+
+
+  /* .about-resume-btn {
+    position: relative;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+  } */
+
+
+  .about-resume-btn a {
+    outline: none;
+    font-size: 12px !important;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #3e65ff;
+    color: aliceblue;
+    backface-visibility: hidden;
+    transition: all 0.2s;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+
+}
+
+@media (min-width: 1001px) and (max-width: 1350px) {
+}
