@@ -428,11 +428,24 @@ body {
   padding: 50px 50px;
 }
 
-.portfolio h1 {
-  padding-top: 5rem;
+.projects-title {
+  display: block;
+}
+
+.projects-h1{
   font-size: 40px;
   font-weight: 600;
   color: #3e64ff;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  padding-top: 5rem;
+  align-items: center;
+  display: block;
+}
+
+
+.projects-h1 i{
+  font-size: 50px;
 }
 
 .portfolio .work-list {
@@ -697,6 +710,13 @@ form textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.coding-profile-links{
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  
 }
 
 .coding-profile-links ul li {
