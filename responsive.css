@@ -1,6 +1,6 @@
 @media (max-width: 500px) {
   body {
-    width: 100%;
+    width:100%;
     font-family: "poppins";
   }
   .navbar {
@@ -223,7 +223,7 @@
 
 @media (min-width: 501px) and (max-width: 700px) {
   body {
-    width: 430px;
+    width:100%;
     font-family: "poppins";
   }
   .navbar {
@@ -446,7 +446,7 @@
 
 @media (min-width: 701px) and (max-width: 1000px) {
   body {
-    width: 430px;
+    width:100%;
     font-family: "poppins";
   }
   .navbar {
