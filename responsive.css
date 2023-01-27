@@ -1,6 +1,6 @@
 @media (max-width: 500px) {
   body {
-    width: 430px;
+    width: 100%;
     font-family: "poppins";
   }
   .navbar {
