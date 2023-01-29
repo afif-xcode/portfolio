@@ -22,7 +22,7 @@ document.querySelectorAll(".nav__items").forEach((n) =>
 
 var typed = new Typed(".dynamic-text", {
   // Waits 1000ms after typing "First"
-  strings: ["Developer.", "Coder.", "Programmer.", "Rider.", "PhotoGrapher."],
+  strings: ["Developer.", "Coder.", "Programmer.", "PhotoGrapher."],
   loop: true,
   smartBackspace: false,
   typeSpeed: 100,
@@ -42,14 +42,3 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
 
-
-
-const email = () => {
-  Email.send({
-    SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
-    To: "islamafif1123@gmail.com",
-    From: "you@isp.com",
-    Subject: "This is the subject",
-    Body: "And this is the body",
-  }).then((message) => alert(message));
-};
