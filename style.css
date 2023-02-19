@@ -337,6 +337,79 @@ body {
   font-weight: 800;
 }
 
+.skills-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.front{
+  background-color:aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.skills-content{
+  display: flex;
+  flex-direction: column;
+  font-size:2rem;
+}
+
+.container {
+  width: 350px;
+  height: 500px;
+  perspective: 800px;
+}
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  /* background-image: url(https://source.unsplash.com/random/350x500); */
+}
+
+.back {
+  background-color: rgba(62, 100, 255, 0.2);
+  color:aliceblue;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.back span ul{
+  text-decoration: none;
+}
+
+.back span ul li{
+  list-style: none;
+  font-size: 20px;
+}
+
 .portfolio {
   padding: 50px 50px;
   border: 30px solid aliceblue;
@@ -383,7 +456,7 @@ body {
   transition: transform 0.5s;
 }
 
-.work-text{
+.work-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -397,7 +470,6 @@ body {
 .work:hover .layer {
   height: 100%;
 }
-
 
 .layer {
   width: 100%;
@@ -564,7 +636,7 @@ form textarea {
   font-size: 16px;
 }
 
-.send-btn {
+.contact-form form button {
   padding-top: 2rem;
   position: relative;
   /* padding-bottom: 70px; */
@@ -573,7 +645,8 @@ form textarea {
   justify-content: center;
 }
 
-.send-btn a {
+.contact-form form button {
+  border: none;
   outline: none;
   font-size: 16px;
   text-decoration: none;
@@ -588,20 +661,8 @@ form textarea {
   transition: all 0.2s;
 }
 
-.send-btn:link,
-.send-btn:visited {
-  color: #fff;
-  background-color: #3e64ff;
-  text-decoration: none;
-}
-
-.send-btn a:hover {
+.contact-form form button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-}
-
-.send-btn a:active {
-  transform: translateY(-1px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 

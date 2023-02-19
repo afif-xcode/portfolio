@@ -1,6 +1,6 @@
 @media (max-width: 500px) {
   body {
-    width:100%;
+    width: 100%;
     font-family: "poppins";
   }
   .navbar {
@@ -95,7 +95,6 @@
     justify-content: space-between;
   }
 
-
   .about-wrapper {
     display: block;
   }
@@ -120,7 +119,7 @@
   }
   .about-content h1 {
     font-size: 40px;
-   
+
     font-weight: 500;
     font-weight: 600;
     color: #3e64ff;
@@ -141,7 +140,6 @@
     justify-content: center;
   }
 
-
   .about-resume-btn a {
     outline: none;
     font-size: 12px;
@@ -154,9 +152,33 @@
     transition: all 0.2s;
   }
 
-  .projects-title {
+  /* Skills Section CSS Code */
+  .skills-h1 {
+    font-size: 30px;
   }
-  
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .skills-content {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 200px;
+    height: 300px;
+    perspective: 800px;
+  }
+
+  .back span ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+
   .projects-h1 {
     /* text-align: center; */
     color: #fff;
@@ -164,7 +186,7 @@
     padding-bottom: 50px;
     padding-top: 5rem;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     display: block;
     font-size: 3rem;
     padding-bottom: 30px;
@@ -181,20 +203,20 @@
     transition: transform 0.5s;
   }
 
-  .work-text{
+  .work-text {
     font-size: 20px;
   }
 
-  .portfolio{
+  .portfolio {
     height: fit-content;
   }
 
-  .projects-h1{
-    font-size:30px;
+  .projects-h1 {
+    font-size: 30px;
     font-weight: 500;
   }
 
-  .projects-h1 i{
+  .projects-h1 i {
     font-size: 30px;
   }
 
@@ -202,22 +224,16 @@
     padding: 0;
   }
 
-
-  .experience-section{
-
+  .experience-section h1 {
+    font-size: 30px;
   }
 
-  .experience-section h1{
-    font-size:30px
+  .experience-about {
+    height: fit-content;
+    padding: 0;
   }
 
-
-  .experience-about{
-    height:fit-content;
-    padding:0;
-  }
-
-  .experience-info{
+  .experience-info {
     height: 50%;
   }
 
@@ -225,34 +241,34 @@
     /* color: #3e64ff !important; */
     font-size: 20px;
   }
-  
+
   .exp-name {
     /* color: #30363d; */
     font-size: 16px;
   }
-  
+
   .exp-type {
     font-style: italic;
     /* color: #000000; */
     font-size: 14px;
   }
-  
+
   .exp-date {
     /* color: #dc2743; */
     font-size: 14px;
   }
-  
+
   .exp-location {
     /* color: #30363d; */
     font-size: 14px;
   }
-  
+
   .exp-details {
     /* color: #000000; */
     font-style: italic;
     font-size: 14px;
   }
-  
+
   .exp-skills {
     /* color: #000000; */
     font-size: 14px;
@@ -303,7 +319,7 @@
 
 @media (min-width: 501px) and (max-width: 700px) {
   body {
-    width:100%;
+    width: 100%;
     font-family: "poppins";
   }
   .navbar {
@@ -398,7 +414,6 @@
     justify-content: space-between;
   }
 
-
   .about-wrapper {
     display: block;
   }
@@ -423,7 +438,7 @@
   }
   .about-content h1 {
     font-size: 40px;
-   
+
     font-weight: 500;
     font-weight: 600;
     color: #3e64ff;
@@ -444,7 +459,6 @@
     justify-content: center;
   }
 
-
   .about-resume-btn a {
     outline: none;
     font-size: 12px;
@@ -457,9 +471,33 @@
     transition: all 0.2s;
   }
 
-  .projects-title {
+  /* Skills Section CSS Code */
+  .skills-h1 {
+    font-size: 30px;
   }
-  
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .skills-content {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 200px;
+    height: 300px;
+    perspective: 800px;
+  }
+
+  .back span ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+
   .projects-h1 {
     /* text-align: center; */
     color: #fff;
@@ -467,7 +505,7 @@
     padding-bottom: 50px;
     padding-top: 5rem;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     display: block;
     font-size: 3rem;
     padding-bottom: 30px;
@@ -484,20 +522,20 @@
     transition: transform 0.5s;
   }
 
-  .work-text{
+  .work-text {
     font-size: 20px;
   }
 
-  .portfolio{
+  .portfolio {
     height: fit-content;
   }
 
-  .projects-h1{
-    font-size:30px;
+  .projects-h1 {
+    font-size: 30px;
     font-weight: 500;
   }
 
-  .projects-h1 i{
+  .projects-h1 i {
     font-size: 30px;
   }
 
@@ -505,22 +543,16 @@
     padding: 0;
   }
 
-
-  .experience-section{
-
+  .experience-section h1 {
+    font-size: 30px;
   }
 
-  .experience-section h1{
-    font-size:30px
+  .experience-about {
+    height: fit-content;
+    padding: 0;
   }
 
-
-  .experience-about{
-    height:fit-content;
-    padding:0;
-  }
-
-  .experience-info{
+  .experience-info {
     height: 50%;
   }
 
@@ -528,34 +560,34 @@
     /* color: #3e64ff !important; */
     font-size: 20px;
   }
-  
+
   .exp-name {
     /* color: #30363d; */
     font-size: 16px;
   }
-  
+
   .exp-type {
     font-style: italic;
     /* color: #000000; */
     font-size: 14px;
   }
-  
+
   .exp-date {
     /* color: #dc2743; */
     font-size: 14px;
   }
-  
+
   .exp-location {
     /* color: #30363d; */
     font-size: 14px;
   }
-  
+
   .exp-details {
     /* color: #000000; */
     font-style: italic;
     font-size: 14px;
   }
-  
+
   .exp-skills {
     /* color: #000000; */
     font-size: 14px;
@@ -606,7 +638,7 @@
 
 @media (min-width: 501px) and (max-width: 700px) {
   body {
-    width:100%;
+    width: 100%;
     font-family: "poppins";
   }
   .navbar {
@@ -701,6 +733,323 @@
     justify-content: space-between;
   }
 
+  .about-wrapper {
+    display: block;
+  }
+
+  .about-img img {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    margin-left: 0px;
+    width: 50%;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 10px 10px #555;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-content h1 {
+    font-size: 40px;
+
+    font-weight: 500;
+    font-weight: 600;
+    color: #3e64ff;
+  }
+
+  .about-content span {
+    font-size: 15px;
+    font-weight: 200;
+    opacity: 0.8;
+    text-align: center;
+  }
+
+  .about-resume-btn {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-resume-btn a {
+    outline: none;
+    font-size: 12px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: #3e65ff;
+    color: aliceblue;
+    backface-visibility: hidden;
+    transition: all 0.2s;
+  }
+  /* Skills Section CSS Code */
+  .skills-h1 {
+    font-size: 30px;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .skills-content {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 200px;
+    height: 300px;
+    perspective: 800px;
+  }
+
+  .back span ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+
+  .projects-h1 {
+    /* text-align: center; */
+    color: #fff;
+    padding-left: 0px;
+    padding-bottom: 50px;
+    padding-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    font-size: 3rem;
+    padding-bottom: 30px;
+    font-weight: 800;
+  }
+
+  .work {
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px;
+    background-color: #fff;
+    width: 100%;
+    height: 13rem;
+    display: block;
+    transition: transform 0.5s;
+  }
+
+  .work-text {
+    font-size: 20px;
+  }
+
+  .portfolio {
+    height: fit-content;
+  }
+
+  .projects-h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .projects-h1 i {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    padding: 0;
+  }
+
+  .experience-section h1 {
+    font-size: 30px;
+  }
+
+  .experience-about {
+    height: fit-content;
+    padding: 0;
+  }
+
+  .experience-info {
+    height: 50%;
+  }
+
+  .experience-about h3 {
+    /* color: #3e64ff !important; */
+    font-size: 20px;
+  }
+
+  .exp-name {
+    /* color: #30363d; */
+    font-size: 16px;
+  }
+
+  .exp-type {
+    font-style: italic;
+    /* color: #000000; */
+    font-size: 14px;
+  }
+
+  .exp-date {
+    /* color: #dc2743; */
+    font-size: 14px;
+  }
+
+  .exp-location {
+    /* color: #30363d; */
+    font-size: 14px;
+  }
+
+  .exp-details {
+    /* color: #000000; */
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  .exp-skills {
+    /* color: #000000; */
+    font-size: 14px;
+  }
+
+  form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* padding: 2vw 4vw; */
+    width: 80%;
+    /* max-width: 600px; */
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .footer {
+    font-size: 14px !important;
+    padding: 0;
+  }
+
+  .contact {
+    padding-left: 8px;
+    font-size: 12px;
+    transform: translateY(-20%);
+  }
+
+  .coding-profile-links {
+    text-align: left;
+    padding: 0;
+    transform: translateY(-40%);
+  }
+
+  .coding-profile-links h2 {
+    font-size: 20px;
+  }
+
+  .follow {
+    padding: 0;
+  }
+
+  .follow h2 {
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  body {
+    width: 100%;
+    font-family: "poppins";
+  }
+  .navbar {
+    position: fixed;
+  }
+
+  .nav__logo {
+    padding: 0;
+    transform: translateX(-100%);
+  }
+
+  .nav__logo .nav__logo-head::after {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    content: "";
+    background: #3e64ff;
+    transform: translate(0%, -45%);
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav__items-list {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #3e65ff;
+    opacity: 0.9;
+    width: 100%;
+    text-align: center;
+    transition: 0.8s ease-in-out;
+  }
+
+  .nav__items-list li {
+    margin: 16px 0;
+  }
+
+  .nav__items-list li a {
+    color: white;
+  }
+
+  .nav__items-list.active {
+    left: 0;
+  }
+
+  .home-text {
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    align-items: center;
+    display: block;
+  }
+
+  .home-text h1 {
+    font-size: 50px;
+  }
+
+  .home-text span {
+    font-size: 16px;
+  }
+
+  .typing-text span {
+    font-size: 20px !important;
+  }
+
+  .about {
+    border: 30px solid aliceblue;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
 
   .about-wrapper {
     display: block;
@@ -726,7 +1075,7 @@
   }
   .about-content h1 {
     font-size: 40px;
-   
+
     font-weight: 500;
     font-weight: 600;
     color: #3e64ff;
@@ -747,7 +1096,6 @@
     justify-content: center;
   }
 
-
   .about-resume-btn a {
     outline: none;
     font-size: 12px;
@@ -759,10 +1107,33 @@
     backface-visibility: hidden;
     transition: all 0.2s;
   }
-
-  .projects-title {
+  /* Skills Section CSS Code */
+  .skills-h1 {
+    font-size: 30px;
   }
-  
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .skills-content {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 200px;
+    height: 300px;
+    perspective: 800px;
+  }
+
+  .back span ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+
   .projects-h1 {
     /* text-align: center; */
     color: #fff;
@@ -770,7 +1141,7 @@
     padding-bottom: 50px;
     padding-top: 5rem;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     display: block;
     font-size: 3rem;
     padding-bottom: 30px;
@@ -787,20 +1158,20 @@
     transition: transform 0.5s;
   }
 
-  .work-text{
+  .work-text {
     font-size: 20px;
   }
 
-  .portfolio{
+  .portfolio {
     height: fit-content;
   }
 
-  .projects-h1{
-    font-size:30px;
+  .projects-h1 {
+    font-size: 30px;
     font-weight: 500;
   }
 
-  .projects-h1 i{
+  .projects-h1 i {
     font-size: 30px;
   }
 
@@ -808,22 +1179,16 @@
     padding: 0;
   }
 
-
-  .experience-section{
-
+  .experience-section h1 {
+    font-size: 30px;
   }
 
-  .experience-section h1{
-    font-size:30px
+  .experience-about {
+    height: fit-content;
+    padding: 0;
   }
 
-
-  .experience-about{
-    height:fit-content;
-    padding:0;
-  }
-
-  .experience-info{
+  .experience-info {
     height: 50%;
   }
 
@@ -831,34 +1196,34 @@
     /* color: #3e64ff !important; */
     font-size: 20px;
   }
-  
+
   .exp-name {
     /* color: #30363d; */
     font-size: 16px;
   }
-  
+
   .exp-type {
     font-style: italic;
     /* color: #000000; */
     font-size: 14px;
   }
-  
+
   .exp-date {
     /* color: #dc2743; */
     font-size: 14px;
   }
-  
+
   .exp-location {
     /* color: #30363d; */
     font-size: 14px;
   }
-  
+
   .exp-details {
     /* color: #000000; */
     font-style: italic;
     font-size: 14px;
   }
-  
+
   .exp-skills {
     /* color: #000000; */
     font-size: 14px;
