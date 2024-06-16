@@ -1,0 +1,133 @@
+/* About Section CSS */
+
+.about {
+  border: 30px solid aliceblue;
+  padding-top: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img {
+  padding-top: 100px;
+  position: relative;
+  z-index: 1;
+  margin-left: 0px;
+}
+
+.about-img img {
+  height: 50%;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 10px 10px 10px 10px #555;
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-weight: 800;
+}
+
+.about-content span {
+  font-size: 20px;
+  font-weight: 200;
+  opacity: 0.8;
+  text-align: center;
+  padding: 5rem 30px 60px 50px;
+}
+
+.about-resume-btn {
+  padding-top: 12rem;
+  position: relative;
+  padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-resume-btn a {
+  outline: none;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #3e65ff;
+  color: aliceblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  backface-visibility: hidden;
+  transition: all 0.2s;
+}
+
+.about-resume-btn a,
+.about-resume-btn a {
+  color: #fff;
+  background-color: #3e64ff;
+  text-decoration: none;
+}
+
+.about-resume-btn a {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.about-resume-btn a {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes moveToCenter {
+  0% {
+    transform: translateX(-50px);
+  }
+
+  70% {
+    transform: translateX(60px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100px);
+  }
+
+  70% {
+    transform: translateX((-110px));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveToTop {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  50% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

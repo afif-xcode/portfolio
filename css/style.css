@@ -1,3 +1,25 @@
+/* General styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", "sans-serif";
+}
+
+/* Import other styles */
+@import url('navbar.css');
+@import url('home.css');
+@import url('about.css');
+@import url('skills.css');
+@import url('projects.css');
+@import url('portfolio.css');
+@import url('experience.css');
+@import url('contact.css');
+@import url('footer.css');
+
 * {
   padding: 0;
   margin: 0;
@@ -213,6 +235,7 @@ body {
 }
 
 .about-img img {
+  height: 50%;
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -337,24 +360,23 @@ body {
   font-weight: 800;
 }
 
-.skills-container{
+.skills-container {
   display: flex;
   justify-content: space-around;
 }
 
-
-.front{
-  background-color:aliceblue;
+.front {
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.skills-content{
+.skills-content {
   display: flex;
   flex-direction: column;
-  font-size:2rem;
+  font-size: 2rem;
 }
 
 .container {
@@ -392,7 +414,7 @@ body {
 
 .back {
   background-color: rgba(62, 100, 255, 0.2);
-  color:aliceblue;
+  color: aliceblue;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -401,14 +423,182 @@ body {
   gap: 5rem;
 }
 
-.back span ul{
+.back span ul {
   text-decoration: none;
 }
 
-.back span ul li{
+.back span ul li {
   list-style: none;
   font-size: 20px;
 }
+
+
+#projects{
+  padding: 50px;
+}
+
+.project-h1 {
+  padding-top: 50px;
+  text-align: center;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+
+article {
+  --img-scale: 1.001;
+  --title-color: aliceblue;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  /* position: relative; */
+  border-radius: 16px;
+  box-shadow: none;
+  background: #112240;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: aliceblue;
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+.article-body p{
+  color: aliceblue;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+article a:focus {
+  outline: 1px dotted aliceblue;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: aliceblue;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  max-height: 100vhs;
+  margin-inline: auto;
+  padding-inline: 24px;
+  padding-top: 150px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+
+/* .projects {
+  background-color: #112240;
+;
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width: 21.875rem;
+  padding: 1rem;
+}
+
+.project-container p {
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: 50px;
+}
+
+.project-details {
+  margin-bottom: 50px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px black;
+  padding: 20px;
+  margin: 10px;
+} */
 
 .portfolio {
   padding: 50px 50px;
@@ -446,7 +636,7 @@ body {
 }
 
 .work {
-  /* position: relative; */
+  position: relative;
   overflow: hidden;
   box-shadow: 5px 5px 5px 5px;
   background-color: #fff;
@@ -796,3 +986,4 @@ form textarea {
   text-decoration: none;
   color: #fff;
 }
+separate each sections css into differnt file
