@@ -1,3 +1,9 @@
+document.body.classList.add("loading");
+window.addEventListener("load", function () {
+  document.getElementById("loader").style.display = "none";
+  document.body.classList.remove("loading");
+});
+
 const links = document.querySelectorAll(".nav__items");
 links.forEach((item) => {
   item.addEventListener("click", () => {
@@ -41,4 +47,3 @@ AOS.init();
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
-
